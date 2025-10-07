@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>موقع محمي بكلمة مرور</title>
+<title>هوية يزيد الرقمية</title>
 <style>
   body {
     font-family: "Cairo", sans-serif;
@@ -19,12 +19,19 @@
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     text-align: center;
-    max-width: 350px;
+    max-width: 400px;
     width: 100%;
+    position: relative;
+  }
+  h1 {
+    font-size: 24px;
+    color: #2e59d9;
+    margin-bottom: 20px;
   }
   h2 {
     margin-bottom: 20px;
     color: #2e59d9;
+    font-size: 20px;
   }
   input {
     width: 100%;
@@ -54,14 +61,22 @@
     margin-top: 10px;
     display: none;
   }
+  .footer {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #2e59d9;
+    font-weight: bold;
+  }
 </style>
 </head>
 <body>
   <div class="container">
+    <h1>📘 مرحبًا بكم في هوية يزيد الرقمية</h1>
     <h2>🔐 أدخل كلمة المرور للوصول</h2>
     <input type="password" id="password" placeholder="أدخل كلمة المرور" />
     <button onclick="checkPassword()">دخول</button>
     <p class="error" id="error">❌ كلمة المرور غير صحيحة</p>
+    <div class="footer">👤 مدير المدرسة: أ/ هشام الكحالي</div>
   </div>
 
 <script>
